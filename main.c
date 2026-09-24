@@ -9,6 +9,20 @@ double func(double x) {
            - 10;
 }
 
+void table_print(double X1, double delta, unsigned int N) {
+    printf("**********************************************\n");
+    printf("*    N    *       X       *       F(X)       * \n");
+    printf("**********************************************\n");
+
+    for (unsigned int i = 0; i < N; i++) {
+        printf("+---------+--------+---------+\n");
+        printf("|       %d|     %.2f|  %.2f|\n", i, X1, func(X1));
+
+        X1 += delta;
+    }
+    printf("+---------+---------------+------------------+\n");
+}
+
 int main() {
     double X1, X2, delta;
     unsigned int N;
@@ -48,6 +62,8 @@ int main() {
     }
 
     printf("X1 = %lf, X2 = %lf, N = %d  delta = %lf\n", X1, X2, N, delta);
+
+    table_print(X1, delta, N);
 
     return 0;
 }
