@@ -2,4 +2,4 @@
 
 
 
-> *Andrii Popivnych* [RB61] [18.09.2026]
+> *Andrii Popivnych* [RB61] [25.09.2026]
